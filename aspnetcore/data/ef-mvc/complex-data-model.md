@@ -193,7 +193,7 @@ An instructor can teach any number of courses, so `CourseAssignments` is defined
 public ICollection<CourseAssignment> CourseAssignments { get; set; }
 ```
 
-If a navigation property can hold multiple entities, its type must be a list in which entries can be added, deleted, and updated.  You can specify `ICollection<T>` or a type such as `List<T>` or `HashSet<T>`. If you specify `ICollection<T>`, EF creates a `HashSet<T>` collection by default.
+If a navigation property can hold multiple entities, its type must be a list in which entries can be added, deleted, and updated.  You can specify `ICollection<T>` or a type such as `List<T>` or `HashSet<T>`. If you specify `ICollection<T>`, EF creates a `List<T>` collection by default.
 
 The reason why these are `CourseAssignment` entities is explained below in the section about many-to-many relationships.
 
